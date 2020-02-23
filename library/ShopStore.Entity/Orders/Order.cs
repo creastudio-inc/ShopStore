@@ -12,24 +12,22 @@ namespace ShopStore.Entity.Orders
     {
         public long CustomerId { get; set; }
 
-//        public User Customer { get; set; }
+        public User Customer { get; set; }
 
-        public DateTimeOffset LatestUpdatedOn { get; set; }
 
         public long LatestUpdatedById { get; set; }
 
-//        public User LatestUpdatedBy { get; set; }
+        public User LatestUpdatedBy { get; set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
 
         public long CreatedById { get; set; }
 
-//        public User CreatedBy { get; set; }
+        public User CreatedBy { get; set; }
 
         public long? VendorId { get; set; }
 
         public string CouponCode { get; set; }
-public string CouponRuleName { get; set; }
+        public string CouponRuleName { get; set; }
 
         public decimal DiscountAmount { get; set; }
 

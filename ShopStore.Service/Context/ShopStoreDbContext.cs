@@ -20,6 +20,9 @@ namespace ShopStore.Service.Context
         public DbSet<ShipmentItem> ShipmentItemContext { get; set; }
         public DbSet<Review> ReviewContext { get; set; }
         public DbSet<Reply> ReplyContext { get; set; }
+        public DbSet<Payment> PaymentContext { get; set; }
+        public DbSet<PaymentDetails> PaymentDetailsContext { get; set; }
+        public DbSet<PaymentProvider> PaymentProviderContext { get; set; }
     }
 
 }

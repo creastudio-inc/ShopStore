@@ -53,6 +53,8 @@
     <Compile Include="ENUM\CommentStatus.cs" />
     <Compile Include="ENUM\InvoiceCreatedBy.cs" />
     <Compile Include="ENUM\OrderStatus.cs" />
+    <Compile Include="ENUM\PaymentDetailsType.cs" />
+    <Compile Include="ENUM\PaymentStatus.cs" />
     <Compile Include="ENUM\PaymentType.cs" />
     <Compile Include="ENUM\ReplyStatus.cs" />
     <Compile Include="ENUM\ReviewStatus.cs" />
@@ -66,9 +68,8 @@
     <Compile Include="Orders\OrderAddress.cs" />
     <Compile Include="Orders\OrderHistory.cs" />
     <Compile Include="Orders\OrderItem.cs" />
-    <Compile Include="Payments\PaymentConfigurations.cs" />
-    <Compile Include="Payments\PaymentResponse.cs" />
-    <Compile Include="Payments\PaymentResponseDetails.cs" />
+    <Compile Include="Payments\PaymentProvider.cs" />
+    <Compile Include="Payments\PaymentDetails.cs" />
     <Compile Include="Catalog\Colors.cs" />
     <Compile Include="Contacts\ContactUs.cs" />
     <Compile Include="Core\Country.cs" />
@@ -81,10 +82,7 @@
     <Compile Include="Invoices\Invoices.cs" />
     <Compile Include="Core\Loggers.cs" />
     <Compile Include="Core\MailingLists.cs" />
-    <Compile Include="Payments\PaymentMethods.cs" />
-    <Compile Include="Payments\PaymentRequestDetails.cs" />
-    <Compile Include="Payments\PaymentRequests.cs" />
-    <Compile Include="Payments\Payments.cs" />
+    <Compile Include="Payments\Payment.cs" />
     <Compile Include="Catalog\PriceDiscounts.cs" />
     <Compile Include="Catalog\ProductBatchDefinitions.cs" />
     <Compile Include="Catalog\ProductBatches.cs" />
