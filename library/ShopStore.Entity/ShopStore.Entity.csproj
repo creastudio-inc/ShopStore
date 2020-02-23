@@ -31,7 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,6 +59,8 @@
     <Compile Include="ENUM\ReviewStatus.cs" />
     <Compile Include="ENUM\ShipmentItemWeights.cs" />
     <Compile Include="ENUM\ShipmentMethodTypes.cs" />
+    <Compile Include="ExtendableObjectExtensions.cs" />
+    <Compile Include="IExtendableObject.cs" />
     <Compile Include="Inventory\Stock.cs" />
     <Compile Include="Inventory\StockHistory.cs" />
     <Compile Include="Inventory\Warehouse.cs" />
@@ -101,10 +107,14 @@
     <Compile Include="Catalog\Sizes.cs" />
     <Compile Include="Core\Sponsors.cs" />
     <Compile Include="Catalog\Units.cs" />
+    <Compile Include="ValidatableObject.cs" />
     <Compile Include="Vendors\Vendors.cs" />
     <Compile Include="Vendors\VendorsCategories.cs" />
     <Compile Include="WishList\WishList.cs" />
     <Compile Include="WishList\WishListItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStore.Entity", "library
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStore.Service", "ShopStore.Service\ShopStore.Service.csproj", "{EA3E7880-3555-4574-B7A9-26E5ED1F2C07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStore.Infrastructure", "library\ShopStore.Infrastructure\ShopStore.Infrastructure.csproj", "{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{EA3E7880-3555-4574-B7A9-26E5ED1F2C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA3E7880-3555-4574-B7A9-26E5ED1F2C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA3E7880-3555-4574-B7A9-26E5ED1F2C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{7ED31713-7378-463E-A230-812A1087CE40} = {4EBEC1EF-2E75-4CF0-A0EA-BE2C517D49AA}
 		{B0D2DDE1-13EC-4B83-90BD-69CF55A18F82} = {010AD120-3E19-4E23-B7EF-884FC856966B}
 		{EA3E7880-3555-4574-B7A9-26E5ED1F2C07} = {010AD120-3E19-4E23-B7EF-884FC856966B}
+		{73045300-7020-46A3-A6EC-A0C2AFC6F2BE} = {010AD120-3E19-4E23-B7EF-884FC856966B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32AF02C9-0EC0-48B3-AD24-6E90320E2E53}
