@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class WishList : EntityBase
+   public  class Vendor : EntityBase
     {
-
-
-        public string SharingCode { get; set; }
-
+        public string Name { get; set; }
         [ForeignKey("User")]
-        public Guid UserId { get; set; }
+        public Guid? UserId { get; set; }
         public User User { get; set; }
-        public IList<WishListItem> Items { get; protected set; } = new List<WishListItem>();
+        [ForeignKey("VendorCategory")]
+        public Guid? VendorCategoryId { get; set; }
 
+        public virtual VendorCategory VendorCategory { get; set; }
     }
 }

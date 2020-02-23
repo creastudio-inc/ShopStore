@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopStore.Infrastructure.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class InvoiceDetails
+    public class InvoiceDetails : EntityBase
     {
         public decimal Commission { get; set; }
         public decimal UnitPrice { get; set; }

@@ -1,4 +1,5 @@
 ﻿using ShopStore.Entity.ENUM;
+using ShopStore.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class Invoices
+    public class Invoices : EntityBase
     {
         public InvoiceCreatedBy InvoiceCreatedBy { get; set; }
         public Guid CustomeruserId { get; set; }

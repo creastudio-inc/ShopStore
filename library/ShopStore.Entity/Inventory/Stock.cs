@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopStore.Infrastructure.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity.Inventory
 {
-    public class Stock 
+    public class Stock : EntityBase
     {
 
         public Products Product { get; set; }

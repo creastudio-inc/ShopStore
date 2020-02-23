@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class Country : EntityBase
+    public class User : EntityBase
     {
-        public string CountryCode { get; set; }
-
     }
 }

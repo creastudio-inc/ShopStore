@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="ActivityLog\Activity.cs" />
     <Compile Include="ActivityLog\ActivityType.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="cms\Articles.cs" />
     <Compile Include="Catalog\Brands.cs" />
     <Compile Include="Core\Cities.cs" />
@@ -59,8 +58,7 @@
     <Compile Include="ENUM\ReviewStatus.cs" />
     <Compile Include="ENUM\ShipmentItemWeights.cs" />
     <Compile Include="ENUM\ShipmentMethodTypes.cs" />
-    <Compile Include="ExtendableObjectExtensions.cs" />
-    <Compile Include="IExtendableObject.cs" />
+    <Compile Include="ENUM\ShipmentStatus.cs" />
     <Compile Include="Inventory\Stock.cs" />
     <Compile Include="Inventory\StockHistory.cs" />
     <Compile Include="Inventory\Warehouse.cs" />
@@ -96,25 +94,31 @@
     <Compile Include="Catalog\ProductDetailsTypes.cs" />
     <Compile Include="Catalog\ProductDetailsTypesDetails.cs" />
     <Compile Include="Catalog\ProductPrices.cs" />
-    <Compile Include="Catalog\Products.cs" />
+    <Compile Include="Catalog\Product.cs" />
     <Compile Include="Catalog\ProductSmallImages.cs" />
     <Compile Include="Catalog\ProductTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reviews\Reply.cs" />
     <Compile Include="Reviews\Review.cs" />
-    <Compile Include="Shipments\ShipmentMethods.cs" />
-    <Compile Include="Shipments\ShippingAddresses.cs" />
     <Compile Include="Catalog\Sizes.cs" />
     <Compile Include="Core\Sponsors.cs" />
     <Compile Include="Catalog\Units.cs" />
-    <Compile Include="ValidatableObject.cs" />
-    <Compile Include="Vendors\Vendors.cs" />
-    <Compile Include="Vendors\VendorsCategories.cs" />
+    <Compile Include="Shipments\Shipment.cs" />
+    <Compile Include="Shipments\ShipmentItem.cs" />
+    <Compile Include="User\User.cs" />
+    <Compile Include="Vendors\Vendor.cs" />
+    <Compile Include="Vendors\VendorCategory.cs" />
     <Compile Include="WishList\WishList.cs" />
     <Compile Include="WishList\WishListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopStore.Infrastructure\ShopStore.Infrastructure.csproj">
+      <Project>{73045300-7020-46A3-A6EC-A0C2AFC6F2BE}</Project>
+      <Name>ShopStore.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

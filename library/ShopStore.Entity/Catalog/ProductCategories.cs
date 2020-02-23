@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopStore.Infrastructure.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-   public class ProductCategories
+   public class ProductCategories : EntityBase
     {
         public string Name { get; set; }
         public string MetaTitle { get; set; }

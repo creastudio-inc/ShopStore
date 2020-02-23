@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopStore.Infrastructure.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class WishListItem
+    public class WishListItem : EntityBase
     {
         public WishList WishList { get; set; }
 
@@ -16,8 +17,5 @@ namespace ShopStore.Entity
 
         public int Quantity { get; set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
-
-        public DateTimeOffset LatestUpdatedOn { get; set; }
     }
 }

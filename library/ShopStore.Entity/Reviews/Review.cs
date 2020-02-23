@@ -1,15 +1,18 @@
 ﻿using ShopStore.Entity.ENUM;
+using ShopStore.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopStore.Entity.Reviews
+namespace ShopStore.Entity
 {
-   public  class Review
+   public  class Review : EntityBase
     {
-        public long UserId { get; set; }
+        [ForeignKey("User")]
+        public Guid UserId { get; set; }
 
         public User User { get; set; }
 
@@ -23,11 +26,8 @@ namespace ShopStore.Entity.Reviews
 
         public ReviewStatus Status { get; set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
 
-        public string EntityTypeId { get; set; }
-
-        public long EntityId { get; set; }
+ 
 
         public IList<Reply> Replies { get; protected set; } = new List<Reply>();
     }

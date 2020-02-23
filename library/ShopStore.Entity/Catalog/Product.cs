@@ -1,4 +1,5 @@
 ﻿using ShopStore.Entity.ENUM;
+using ShopStore.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-    public class Products
+    public class Product : EntityBase
     {
         public int SuggestedCount { get; set; }
          public string Label { get; set; }
@@ -28,7 +29,7 @@ namespace ShopStore.Entity
          public DateTime? StartDate { get; set; }
         public Cities Cities { get; set; }
         public virtual ProductTypes ProductTypes { get; set; }
-        public virtual Products MainProducts { get; set; }
+        public virtual Product MainProducts { get; set; }
         public virtual ProductCategories ProductCategories { get; set; }
 
         public virtual Brands Brands { get; set; }

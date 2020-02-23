@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShopStore.Infrastructure.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopStore.Entity.Orders
 {
-  public   class OrderAddress
+  public   class OrderAddress : EntityBase
     {
         public string ContactName { get; set; }
 

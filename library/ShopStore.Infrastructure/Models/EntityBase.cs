@@ -1,4 +1,6 @@
-﻿namespace ShopStore.Infrastructure.Models
+﻿using System;
+
+namespace ShopStore.Infrastructure.Models
 {
     /// <summary>
     ///     Provides a base class for your objects which will be persisted to the database.
@@ -8,7 +10,10 @@
     ///     base class leverages this assumption.  If you want an entity with a type other
     ///     than int, such as string, then use <see cref="EntityBaseWithTypedId{TId}" /> instead.
     /// </summary>
-    public abstract class EntityBase : EntityBaseWithTypedId<long>
+    public abstract class EntityBase : EntityBaseWithTypedId<Guid>
     {
+        public DateTimeOffset CreatedOn { get; set; }
+        public DateTimeOffset LatestUpdatedOn { get; set; }
+
     }
 }
