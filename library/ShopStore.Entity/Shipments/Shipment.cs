@@ -1,6 +1,4 @@
-﻿using ShopStore.Entity.ENUM;
-using ShopStore.Entity.Inventory;
-using ShopStore.Entity.Orders;
+﻿using ShopStore.Entity.ENUM; 
 using ShopStore.Infrastructure.Models;
 using System;
 using System.Collections.Generic;

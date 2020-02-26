@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ShopStore.Entity.Orders
+namespace ShopStore.Entity
 {
     public class Order : EntityBase
     {

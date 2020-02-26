@@ -3,7 +3,7 @@ using ShopStore.Infrastructure.Models;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ShopStore.Entity.Orders
+namespace ShopStore.Entity
 {
     public class OrderHistory : EntityBase
     {

@@ -1,6 +1,6 @@
 ﻿using ShopStore.Infrastructure.Models;
 
-namespace ShopStore.Entity.Orders
+namespace ShopStore.Entity
 {
     public class OrderAddress : EntityBase
     {

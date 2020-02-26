@@ -1,6 +1,5 @@
 ﻿using ShopStore.Entity.ENUM;
-using ShopStore.Entity.Orders;
-using ShopStore.Infrastructure.Models;
+ using ShopStore.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

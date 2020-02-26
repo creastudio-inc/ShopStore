@@ -2,7 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ShopStore.Entity.Inventory
+namespace ShopStore.Entity
 {
     public class Stock : EntityBase
     {
