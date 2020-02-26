@@ -5,20 +5,16 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-  public  class Payment : EntityBase
+    public class Payment : EntityBase
     {
         [ForeignKey("Order")]
         public Guid OrderId { get; set; }
 
         public Order Order { get; set; }
 
-      
         public decimal Amount { get; set; }
 
         public decimal PaymentFee { get; set; }
@@ -33,6 +29,5 @@ namespace ShopStore.Entity
 
         public string FailureMessage { get; set; }
         public virtual ICollection<PaymentDetails> PaymentDetails { get; set; }
-
     }
 }

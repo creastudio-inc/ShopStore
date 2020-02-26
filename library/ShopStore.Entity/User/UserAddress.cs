@@ -4,18 +4,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopStore.Entity
 {
-    public class Activity : EntityBase
+    public class UserAddress : EntityBase
     {
-        public string Description { get; set; }
-
-        [ForeignKey("ActivityType")]
-        public Guid ActivityTypeId { get; set; }
-
-        public ActivityType ActivityType { get; set; }
-
         [ForeignKey("User")]
         public Guid UserId { get; set; }
 
         public User User { get; set; }
+
+        [ForeignKey("Address")]
+        public Guid AddressId { get; set; }
+
+        public Address Address { get; set; }
+
+        public DateTimeOffset? LastUsedOn { get; set; }
     }
 }

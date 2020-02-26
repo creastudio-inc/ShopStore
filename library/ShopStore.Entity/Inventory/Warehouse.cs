@@ -1,9 +1,6 @@
 ﻿using ShopStore.Infrastructure.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopStore.Entity.Inventory
 {
@@ -11,9 +8,11 @@ namespace ShopStore.Entity.Inventory
     {
         public string Name { get; set; }
 
+        [ForeignKey("Vendor")]
+        public Guid VendorId { get; set; }
 
-        public Vendors Vendor { get; set; }
+        public Vendor Vendor { get; set; }
 
-      //  public Address Address { get; set; }
+        public Address Address { get; set; }
     }
 }

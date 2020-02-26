@@ -1,15 +1,11 @@
 ﻿using ShopStore.Entity.ENUM;
 using ShopStore.Infrastructure.Models;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
-   public  class Reply : EntityBase
+    public class Reply : EntityBase
     {
         [ForeignKey("Review")]
         public Guid ReviewId { get; set; }
@@ -26,6 +22,5 @@ namespace ShopStore.Entity
         public string ReplierName { get; set; }
 
         public ReplyStatus Status { get; set; }
-
     }
 }

@@ -6,19 +6,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopStore.Entity
 {
     public class Shipment : EntityBase
     {
-        
-       
         [StringLength(450)]
         public string TrackingNumber { get; set; }
-
 
         [ForeignKey("Order")]
         public Guid OrderId { get; set; }
@@ -27,10 +21,12 @@ namespace ShopStore.Entity
 
         [ForeignKey("Vendor")]
         public Guid? VendorId { get; set; }
+
         public Vendor Vendor { get; set; }
 
         [ForeignKey("Warehouse")]
         public Guid WarehouseId { get; set; }
+
         public Warehouse Warehouse { get; set; }
 
         [ForeignKey("CreatedBy")]
@@ -40,6 +36,6 @@ namespace ShopStore.Entity
 
         public ShipmentStatus ShipmentStatus { get; set; }
 
-        public IList<ShipmentItem> Items { get; set; } = new List<ShipmentItem>();
+        public virtual ICollection<ShipmentItem> Items { get; set; }
     }
 }

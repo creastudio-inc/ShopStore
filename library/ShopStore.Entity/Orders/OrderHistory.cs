@@ -1,16 +1,14 @@
 ﻿using ShopStore.Entity.ENUM;
 using ShopStore.Infrastructure.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopStore.Entity.Orders
 {
     public class OrderHistory : EntityBase
     {
-        public long OrderId { get; set; }
+        [ForeignKey("Order")]
+        public Guid OrderId { get; set; }
 
         public Order Order { get; set; }
 
@@ -22,9 +20,9 @@ namespace ShopStore.Entity.Orders
 
         public string Note { get; set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
+        [ForeignKey("CreatedBy")]
+        public Guid CreatedById { get; set; }
 
-
-     //   public User CreatedBy { get; set; }
+        public User CreatedBy { get; set; }
     }
 }
